@@ -114,7 +114,7 @@ public class WeatherStatsAnalyzer {
 	 * @param objStream  input data stream of WindDataRow POJOS
 	 * @return
 	 */
-	private List<LocalDate> processData(Predicate<WindDataRow> filterPredicateFunc,
+	protected static List<LocalDate> processData(Predicate<WindDataRow> filterPredicateFunc,
 			TimeSpanHours hours, double minWind, double maxPerc,
 			Stream<WindDataRow> objStream) {
 
