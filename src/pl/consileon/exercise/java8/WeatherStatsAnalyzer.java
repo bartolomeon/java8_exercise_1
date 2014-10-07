@@ -67,7 +67,7 @@ class WindDataRow {
 		LocalDate date = LocalDate.parse(columns[0], dateFormatter);
 
 		int[] wind = Arrays.stream(columns).skip(1).limit(24).mapToInt(Integer::valueOf).toArray();
-		double percip[] = Arrays.stream(columns).skip(24).mapToDouble(Double::valueOf).toArray();
+		double percip[] = Arrays.stream(columns).skip(25).mapToDouble(Double::valueOf).toArray();
 		
 		return new WindDataRow(date, wind, percip);
 	}
